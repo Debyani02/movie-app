@@ -1,0 +1,28 @@
+.container{
+    padding-top: 35px;
+    gap: 5px;
+    display: flexbox;
+    flex-direction:row;
+    
+}
+.cardlist-container{
+    padding-top: 30px;
+    justify-items: center;
+    margin-bottom: -20px;
+    
+
+}
+.no-data-container{
+    min-height: 75vh;
+    padding-top: 90px;
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+    animation: blinkText 1s infinite;
+    
+}
+@keyframes blinkText {
+    0%{opacity: 1;}
+    50%{opacity: 0;}
+    100%{opacity: 1;}
+}

@@ -1,0 +1,36 @@
+
+.menu {
+  width: 200px;
+  height: auto;
+  background: #f8f9fa;
+  transition: transform 0.3s ease;
+  margin-top: 30px;
+  min-height: 100vh;
+  position: sticky;
+  z-index: 1000;
+}
+
+.hamburger {
+  display: none;
+  position: fixed;
+  top: 12px;
+  left: 15px;
+  z-index: 1100;
+}
+@media (max-width: 768px) {
+  .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    z-index: 1000;
+  }
+
+  .menu.open {
+    transform: translateX(0);
+  }
+
+  .hamburger {
+    display: block;
+  }
+}

@@ -1,0 +1,27 @@
+.navbar{
+    background-color:#53585b ;
+    color:rgb(237, 237, 255) ;
+}
+.header-content{
+    display:flex;
+    width: 100%;
+}
+.header-content p{
+    width: 90%;
+    font-size: 20px;
+}
+.btn-outline-success{
+    color: aliceblue;
+    border-color: aliceblue;
+    height:40px;
+    
+    
+}
+
+@media (max-width: 768px) {
+   .header-content {
+    margin-left: 60px;
+    width: 80%;
+    font-size:15px;
+} 
+}

@@ -1,0 +1,23 @@
+.dashboard-container {
+  display: flex;
+  overflow-x: hidden;
+}
+
+
+.dashboard-container .menu {
+  width: 220px;
+  min-height: 100vh;
+  flex-shrink: 0;
+}
+
+
+.dashboard-content {
+  flex: 1;
+  margin-left: 10px;
+  transition: margin-left 0.3s ease;
+  
+}
+.card-body{
+    overflow-x:hidden;
+    }
+
