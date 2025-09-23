@@ -17,7 +17,7 @@
         fetchData();
     }, []);
 
-    // filter movies by search text
+    
     const filteredMovies = movies.filter((movie) =>
         movie.title.toLowerCase().includes(search.toLowerCase())
     );
@@ -25,7 +25,6 @@
     return (
         <div className="container my-5">
         
-        {/* Movies Grid */}
         <div className="row g-4">
             {filteredMovies.length > 0 ? (
             filteredMovies.map((movie) => (

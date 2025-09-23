@@ -28,7 +28,7 @@ export default function Dashboard() {
     <>
       <Header />
 
-      <div className="dashboard-container my-4">
+      <div className="dashboard-container my-4 mb-5">
 
         <Sidebar activeTab={activeTab} setActiveTab={setActiveTab} />
         <div className="dashboard-content container mt-5">

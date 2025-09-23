@@ -92,7 +92,7 @@ export default function AddMovies() {
   };
 
   return (
-    <div className="container-fluid mt-5">
+    <div className="container-fluid mt-5 mb-5">
       <div
         className="card shadow col-md-9 mx-auto">
 

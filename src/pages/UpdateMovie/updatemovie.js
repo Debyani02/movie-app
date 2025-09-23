@@ -94,7 +94,7 @@ export default function UpdateMovie() {
   };
 
   return (
-    <div className="container-fluid text-start mt-5">
+    <div className="container-fluid text-start mt-5 mb-5">
       <Header />
       <br></br><br></br>
       <center><h2>Update Movie</h2></center>

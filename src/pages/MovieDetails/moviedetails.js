@@ -58,10 +58,10 @@ export default function MovieDetails() {
     <>
     <Header/>
     <div className="d-flex justify-content-center min-vh-100 ">
-        <div className="card d-flex shadow-sm col-md-9 mx-auto  mt-5 text-start">
+        <div className="card d-flex shadow-sm col-md-9 mx-auto  mt-5 text-start mb-5">
           <div className="container my-5 p-3 ">
             <div className="row g-4">
-              {/* Poster / Trailer */}
+             
               <div
                 className="col-md-4"
                 onMouseEnter={() => setShowTrailer(true)}
@@ -74,7 +74,7 @@ export default function MovieDetails() {
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
                     className="w-100 rounded shadow"
-                    style={{ minHeight: "500px" }} // 👈 same area size as poster
+                    style={{ minHeight: "500px" }} 
                   ></iframe>
                 ) : (
                   <img
@@ -88,7 +88,7 @@ export default function MovieDetails() {
               
               </div>
 
-              {/* Movie Details */}
+             
               <div className="col-md-8">
                 <h1>{movie.title}</h1>
                 <p className="text-muted">Directed by <strong>{movie.director}</strong></p>
@@ -129,7 +129,6 @@ export default function MovieDetails() {
           
           <hr className="my-4" />
 
-          {/* Extra Info */}
           <div className="row px-5">
             <div className="col-md-6">
               <h4>Cast</h4>
@@ -161,7 +160,6 @@ export default function MovieDetails() {
 
           <hr className="my-4" />
 
-          {/* Financial Info */}
           <div className="row px-4">
             <div className="col-md-6">
               <h5>Budget:</h5>
