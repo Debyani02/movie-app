@@ -58,7 +58,7 @@ export default function ChangePassword() {
     }
 
     return (
-        <div className="start container col-md-4 mx-auto text-start">
+        <div className="start container col-md-5 mx-auto text-start">
             <div className="card " >
                 <div className="card shadow">
                     <div className="card-body">
