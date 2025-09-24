@@ -2,7 +2,7 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Signin from './pages/Signin/signin';
-import { HashRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Signup from './pages/Signup/signup';
 import Dashboard from './pages/Dashboard/dashboard';
 import "bootstrap-icons/font/bootstrap-icons.css";
@@ -17,7 +17,7 @@ function App() {
       <Router>
         <Routes>
           <Route path='/' element={<Signin />}></Route>
-          <Route path='/signup' element={<Signup />}></Route>
+          <Route path="/signup" element={<Signup />}></Route>
           <Route path="/dashboard" element={
             <ProtectedRoute>
               <Dashboard />

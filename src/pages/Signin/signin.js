@@ -4,7 +4,7 @@ import {useNavigate } from "react-router-dom";
 import CircularProgress from "@mui/material/CircularProgress";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { Navigate } from "react-router-dom";
+import { Navigate,Link } from "react-router-dom";
 import { isAuthenticated } from "../../api/auth";
 
 
@@ -40,7 +40,7 @@ export default function Signin() {
 
                 const res = await login(email, password);
                 toast.success("Login successful!");                
-                navigate("./dashboard");
+                navigate("/dashboard");
 
             }
             catch (err) {
@@ -95,7 +95,7 @@ export default function Signin() {
                                             required
                                         />
                                     </div>
-                                    <div className="mb-3">
+                                    <div className="mb-3 position-relative">
                                         <input
                                             type={show ? "text" : "password"}
                                             name="password"
@@ -128,7 +128,7 @@ export default function Signin() {
 
                                     </div>
                                 </form><br></br>
-                                <p className="signup-link" style={{ "padding": "3px", "textAlign": "right" }}>Don't have an account?<a href="/signup">Signup</a></p>
+                                <p className="signup-link" style={{ "padding": "3px", "textAlign": "right" }}>Don't have an account? <Link to="/signup">Signup</Link></p>
                                 <br></br>
                                 <p className="text-danger">{message}</p>
                             </div>
