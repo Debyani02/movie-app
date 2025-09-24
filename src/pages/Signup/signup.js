@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate,Link} from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { register } from "../../api/auth";
 import { ToastContainer, toast } from "react-toastify";
@@ -201,7 +201,7 @@ export default function Signup() {
 
                             </form>
                             <br></br>
-                            <p className="login-link" style={{ "padding": "3px", "textAlign": "right" }}>Existing user?<a href="/">Sign In</a></p>
+                            <p className="login-link" style={{ "padding": "3px", "textAlign": "right" }}>Existing user?<Link to="/">Login</Link></p>
                         </div>
                     </div>
                 </div>
