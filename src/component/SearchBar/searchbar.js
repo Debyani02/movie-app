@@ -2,7 +2,7 @@ import React, { useState } from "react";
 export default function SearchBar({ search, setSearch }) {
 
     return (
-        <div className="row mb-4">
+        <div className="row mt-2 mb-2">
             <div className="col-md-6 mx-auto mb-3 mb-md-0">
                 <input
                     type="text"

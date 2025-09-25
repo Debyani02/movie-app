@@ -33,7 +33,7 @@ export default function Header() {
                         height="40"
                         style={{ objectFit: "cover" }}
                     />
-                    <p style={{padding:"5px"}}>Welcome, {formData?.name}</p>
+                    <p style={{padding:"5px"}}>Welcome, {formData?.name.split(" ")[0]}</p>
                     <button className="btn btn-outline-success" onClick={handleLogout}>Logout</button>
                 </div>
             </nav>

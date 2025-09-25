@@ -81,9 +81,9 @@ export default function Home() {
 
     return (
         <div>
-            <div className="mt-2">
-                <div className="row">
-                    <div className="col-md-6">
+            <div >
+                <div className="row mb-2 mt-2">
+                    <div className="col-md-6 ">
                         <SearchBar search={search} setSearch={setSearch} style={{ "width": "100%" }} />
                     </div>
                     <div className="col-md-6">

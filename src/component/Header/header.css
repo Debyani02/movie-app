@@ -21,7 +21,7 @@
 @media (max-width: 768px) {
    .header-content {
     margin-left: 60px;
-    width: 80%;
+    width: 100%;
     font-size:15px;
 } 
 }
