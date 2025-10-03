@@ -13,7 +13,6 @@ export default function Header() {
            const data = localStorage.getItem("userData");
            if (data) {
                setFormData(JSON.parse(data));
-               console.log("Formdata---------",formData)
                
            }
        }, []);

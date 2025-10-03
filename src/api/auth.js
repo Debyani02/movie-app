@@ -49,7 +49,6 @@ export const getCurrentUser = async () => {
 export const updateProfile = async (formData) => {
     try{
         const { data } = await API.put("/auth/profile",formData);
-        console.log("data......",data.data.avatar);
         if(data && data.data){
             localStorage.setItem("userData", JSON.stringify(data.data));
         }

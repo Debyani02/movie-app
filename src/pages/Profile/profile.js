@@ -29,19 +29,19 @@ export default function Profile() {
         if (file) {
             const reader = new FileReader();
             reader.onloadend = () => {
-                setFormData((prev) => ({ ...prev, avatar: reader.result }));
+                const updatedData = { ...formData, avatar: reader.result };
+                setFormData(updatedData);
                 setImage(reader.result);
-                uploadImage();
+                uploadImage(updatedData);
             };
             reader.readAsDataURL(file);
 
         }
     }
 
-    const uploadImage = async () => {
+    const uploadImage = async (data) => {
         try {
-            console.log("inside upload image")
-            const res = await updateProfile(formData);
+            const res = await updateProfile(data);
             toast.success(res?.message);
             
 
@@ -83,7 +83,6 @@ export default function Profile() {
         if (isEditable) {
             setLoading(true);
             try {
-                console.log("inside handlesubmit----------------------")
                 const res = await updateProfile(formData);
                 toast.success("Profile updated!");
                 setIsEditable(false);
@@ -92,7 +91,6 @@ export default function Profile() {
             catch (err) {
 
                 toast.error(err.message || "Failed to update!")
-                console.log("inside catc-----------")
 
             }
             finally {
@@ -129,7 +127,7 @@ export default function Profile() {
 
                                     <input
                                         type="file"
-                                        accept="image/"
+                                        accept="image/*"
                                         ref={fileInputRef}
                                         onChange={handleFileChange}
                                         className="d-none"
